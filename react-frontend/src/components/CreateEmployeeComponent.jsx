@@ -39,7 +39,8 @@ class CreateEmployeeComponent extends Component {
         console.log('employee => ' + JSON.stringify(employee));
 
         // step 5
-        if(this.state.id === '_add'){
+        if(
+            = '_add'){
             EmployeeService.createEmployee(employee).then(res =>{
                 this.props.history.push('/employees');
             });
@@ -88,7 +89,7 @@ class CreateEmployeeComponent extends Component {
                                         <div className = "form-group">
                                             <label> First Name: </label>
                                             <input placeholder="First Name" name="firstName" className="form-control" 
-                                                value={this.state.firstName} onChange={this.changeFirstNameHandler}/>
+                                                value={this.state.firstName} onChange={this.changeFirstNameHandler} />
                                         </div>
                                         <div className = "form-group">
                                             <label> Last Name: </label>
